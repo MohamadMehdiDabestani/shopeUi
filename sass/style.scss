@@ -1,0 +1,122 @@
+@import "./variables.scss";
+
+// global styles
+
+.header {
+  box-shadow: 0 0 20px 0px #c5c5c559, 0px 7px 20px 10px #e0e0e038;
+  width: 100%;
+  height: auto;
+  padding: 25px 25px 0 25px;
+  background: $bgEl;
+  .logo {
+    width: 75px;
+  }
+  .account {
+    cursor: pointer;
+    flex: 10%;
+    a {
+      margin: 0 10px;
+      color: #484848;
+    }
+  }
+  .search {
+    flex: 60%;
+    .input {
+      background: #e8e8e8;
+      width: 60%;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      padding-right: 15px;
+      button {
+        border: 0;
+        background: transparent;
+      }
+      input {
+        outline: none;
+        width: 100%;
+        border-radius: 8px 0 0 8px;
+        border: 0;
+        padding: 15px 10px;
+        background: transparent;
+      }
+      span {
+        cursor: pointer;
+        color: #a5a5a5;
+        font-size: 25px;
+        font-weight: 700;
+      }
+    }
+  }
+  .menu {
+    ul {
+      margin-right: 30px;
+      li {
+        display: inline-block;
+        padding: 30px 10px 15px 10px;
+        position: relative;
+        &::before {
+          position: absolute;
+          content: "";
+          background-color: $blue;
+          width: 0;
+          height: 2px;
+          transition: all 0.3s ease-in-out;
+          bottom: 0;
+          right: 0;
+        }
+        &:hover::before {
+          width: 100%;
+          box-shadow: 0 0 13px 0px #3772ff63;
+        }
+        a {
+          color: #2f2f2f;
+        }
+      }
+    }
+  }
+}
+main {
+  margin: 30px 2%;
+  display: block;
+  .swiper-container {
+    width: 100%;
+    height: 550px;
+    .swiper-slide {
+      display: block;
+      width: 100%;
+      height: 100%;
+      img {
+        object-fit: cover;
+        width: 100%;
+        border-radius: 8px;
+        height: 100%;
+      }
+    }
+    .custom-pagination {
+      span {
+        margin: 0 7px;
+        width: 15px;
+        height: 15px;
+        &.swiper-pagination-bullet-active {
+          background: $yellow;
+          box-shadow: 0px 3px 4px 1px #a2a2a280;
+        }
+      }
+    }
+  }
+  .product-random {
+    width: 100%;
+    height: 240px;
+
+    .title-product {
+      font-size: 12px;
+      color: #444444;
+      margin-bottom: 20px;
+    }
+  }
+  .top-seller-tomonth {
+    width: 100%;
+    height: auto;
+  }
+} // main

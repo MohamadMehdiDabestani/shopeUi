@@ -1,0 +1,142 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/global.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap-grid.rtl.min.css" />
+    <link rel="stylesheet" href="./css/style.min.css" />
+  </head>
+  <body>
+    <span class="tooltip"></span>
+    <div class="header">
+      <div class="central">
+        <img src="./img/Webp.net-resizeimage.png" class="logo" alt="" />
+        <div class="search central">
+          <form class="input">
+            <button type="submit">
+              <span class="material-icons"> search </span>
+            </button>
+            <input type="search" placeholder="جستجوی در سایت" />
+          </form>
+        </div>
+        <div class="account central">
+          <a href="/register" data-tooltip="ثبت نام" class="material-icons">
+            person
+          </a>
+          <a href="/login" class="material-icons" data-tooltip="ورود">
+            login
+          </a>
+        </div>
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a href="#">محصولات</a></li>
+          <li><a href="#">جستجوی پیشرفته</a></li>
+          <li><a href="#">بلاگ</a></li>
+          <li><a href="#">درباره ی فروشگاه</a></li>
+          <li><a href="#">تماس با فروشگاه</a></li>
+        </ul>
+      </div>
+    </div>
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="swiper-container" dir="ltr">
+              <div class="swiper-wrapper">
+                <a href="#" class="swiper-slide">
+                  <img src="./img/slider-header/1.jpg" alt="" />
+                </a>
+                <a href="#" class="swiper-slide">
+                  <img src="./img/slider-header/2.jpg" alt="" />
+                </a>
+                <a href="#" class="swiper-slide">
+                  <img src="./img/slider-header/3.jpg" alt="" />
+                </a>
+              </div>
+              <div class="swiper-pagination custom-pagination"></div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="product-random">
+              <p class="title-product">کالا های تصادفی :</p>
+              <div class="product-horizontal">
+                <div class="image">
+                  <img src="./img/bic.jpg" alt="" />
+                </div>
+                <div class="content" data-postId="7">
+                  <a href="#">دوچرخه ی خوبی باش</a>
+                  <p>
+                    <span class="material-icons"> payments </span>
+                    قیمت : 50,000
+                  </p>
+                  <p>
+                    <span class="material-icons"> category </span>
+                    دسته بندی : وسایل ورزشی
+                  </p>
+                  <a href="#" class="button button-ef bg-p"> ادامه </a>
+                  <ul>
+                    <li data-tooltip="پسندیدن">
+                      <span class="material-icons"> favorite_border </span>
+                    </li>
+                    <li data-tooltip="ذخیره">
+                      <span class="material-icons"> turned_in_not </span>
+                    </li>
+                    <li data-tooltip="افزودن به لیست مقایسه">
+                      <span class="material-icons"> area_chart </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="product-horizontal mt-5">
+                <div class="image">
+                  <img src="./img/bic.jpg" alt="" />
+                </div>
+                <div class="content" data-postId="5">
+                  <a href="#">دوچرخه ی خوبی باش</a>
+                  <p>
+                    <span class="material-icons"> payments </span>
+                    قیمت : 50,000
+                  </p>
+                  <p>
+                    <span class="material-icons"> category </span>
+                    دسته بندی : وسایل ورزشی
+                  </p>
+                  <a href="#" class="button button-ef bg-p"> ادامه </a>
+                  <ul>
+                    <li data-tooltip="پسندیدن" >
+                      <span class="material-icons"> favorite_border </span>
+                    </li>
+                    <li data-tooltip="ذخیره" >
+                      <span class="material-icons"> turned_in_not </span>
+                    </li>
+                    <li data-tooltip="افزودن به لیست مقایسه">
+                      <span
+                        class="material-icons"
+                      >
+                        area_chart
+                      </span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="top-seller-tomonth">
+        
+      </div>
+    </main>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
